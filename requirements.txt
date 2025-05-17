@@ -1,0 +1,20 @@
+# Configuração de requisitos para o backend FastAPI
+
+# Dependências principais
+fastapi==0.103.1
+uvicorn==0.23.2
+pydantic==2.3.0
+python-dotenv==1.0.0
+
+# Clientes de API
+openai==1.12.0
+weaviate-client==4.4.0
+
+# Processamento de dados
+numpy==1.25.2
+pandas==2.1.0
+
+# Utilitários
+python-multipart==0.0.6
+httpx==0.24.1
+asyncio==3.4.3
