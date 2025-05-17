@@ -3,7 +3,8 @@
 # Dependências principais
 fastapi==0.103.1
 uvicorn==0.23.2
-pydantic==2.3.0
+# Atualizado pydantic para versão compatível com weaviate-client
+pydantic>=2.5.0,<3.0.0
 python-dotenv==1.0.0
 
 # Clientes de API
