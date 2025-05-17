@@ -1,0 +1,19 @@
+# Configuração do Render para o backend FastAPI
+
+services:
+  - type: web
+    name: discovery-rag-agent-v2-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd server && uvicorn app.api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: WEAVIATE_URL
+        sync: false
+      - key: WEAVIATE_API_KEY
+        sync: false
+    healthCheckPath: /health
+    autoDeploy: true
