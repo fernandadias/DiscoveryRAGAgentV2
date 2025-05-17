@@ -16,5 +16,6 @@ pandas==2.1.0
 
 # Utilitários
 python-multipart==0.0.6
-httpx==0.24.1
+# Removido httpx específico para resolver conflito de dependências
+# httpx==0.24.1
 asyncio==3.4.3
