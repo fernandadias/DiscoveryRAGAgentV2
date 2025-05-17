@@ -31,8 +31,5 @@
       "src": "/(.*)",
       "dest": "/client/index.html"
     }
-  ],
-  "env": {
-    "REACT_APP_API_URL": "https://discovery-rag-agent-v2-api.onrender.com"
-  }
+  ]
 }
